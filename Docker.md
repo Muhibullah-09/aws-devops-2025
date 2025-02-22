@@ -202,6 +202,16 @@ This can mean two things,
 2. Your user does not have access to run docker commands.
 
 
+
+### Run Docker Grp Command
+
+You use the below command to verify if the docker daemon is actually started and Active
+
+```
+newgrp docker
+```
+
+
 ### Start Docker daemon
 
 You use the below command to verify if the docker daemon is actually started and Active
