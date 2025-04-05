@@ -106,3 +106,15 @@ kubectl get pods -o json | jq -c 'path(..)|[.[]|tostring]|join(".")'
 # Helpful when running any supported command across all pods, not just `env`
 for pod in $(kubectl get po --output=jsonpath={.items..metadata.name}); do echo $pod && kubectl exec -it $pod -- env; done
 
+# Step By Step Guide of K8s Service
+1. Image ready rkho
+2. deployment.yml ki file banao
+3. Labels and selector note krlo
+4. deployment chlao
+5. minikube ssh kr k pod par application check kro
+6. By default ya clustIp based hota pod.
+
+# Issue with service
+1. k8s services are unable to provide traditional enterprise level features like 
+TLS based routing, Path based routing, sticky, Ratiobased.
+2. Service Load Balancer charged you high cost like each load balancer ip will charge you.
