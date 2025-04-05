@@ -118,3 +118,6 @@ for pod in $(kubectl get po --output=jsonpath={.items..metadata.name}); do echo 
 1. k8s services are unable to provide traditional enterprise level features like 
 TLS based routing, Path based routing, sticky, Ratiobased.
 2. Service Load Balancer charged you high cost like each load balancer ip will charge you.
+
+# Ingress in Kubernetes
+![Ingress Iage](https://i.imgur.com/K80I4gN.png)
