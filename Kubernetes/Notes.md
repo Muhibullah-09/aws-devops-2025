@@ -120,4 +120,5 @@ TLS based routing, Path based routing, sticky, Ratiobased.
 2. Service Load Balancer charged you high cost like each load balancer ip will charge you.
 
 # Ingress in Kubernetes
+An ingress is an alternative to creating a dedicated network load balancer in front of Kubernetes services, or manually exposing services within a node. It lets you flexibly configure routing rules, greatly simplifying your production environment. This is part of a series of articles about Kubernetes API gateway.
 ![Ingress Iage](https://i.imgur.com/K80I4gN.png)
