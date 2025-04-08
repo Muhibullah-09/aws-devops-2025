@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-no-auth
+spec:
+  rules:
+  - host: "foo.bar.com"
+    http:
+      paths:
+      - path: /first
+        pathType: Prefix
+        backend:
+          service:
+            name: python-app-service
+            port:
+              number: 80
+      paths:
+      - path: /second
+        pathType: Prefix
+        backend:
+          service:
+            name: python-app-service
+            port:
+              number: 80
+        
