@@ -1,0 +1,60 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.*
+terraform.tfsate
+terraform.tfsate.*
+*.tfvars
+*.tfvars.json
+*.plan
+tfplan
+terraform.tfplan
+*.backup
+*.lock.info
+
+# Terraform directories
+.terraform/
+
+# Sensitive variable files
+variables.tf
+terraform.tf
+
+# AWS credentials and configuration
+.aws/
+credentials
+config
+
+# Secrets and environment files
+.env
+*.secret
+*.key
+*.pem
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.temp
+
+# Local development files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and debugging files
+*.log
+crash.log
+terraform.log
+
+# macOS-specific files
+.DS_Store
+
+# Editor swap files
+*.swp
+*.swo
+
+# Node.js specific (for 1click-Solution-Backend)
+node_modules/
+dist/
+*.lock

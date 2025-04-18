@@ -122,3 +122,9 @@ TLS based routing, Path based routing, sticky, Ratiobased.
 # Ingress in Kubernetes
 An ingress is an alternative to creating a dedicated network load balancer in front of Kubernetes services, or manually exposing services within a node. It lets you flexibly configure routing rules, greatly simplifying your production environment. This is part of a series of articles about Kubernetes API gateway.
 ![Ingress Iage](https://i.imgur.com/K80I4gN.png)
+
+# RBAC in Kubernetes
+In Kubernetes, RBAC (Role-Based Access Control) is a security mechanism that controls access to the Kubernetes API and resources by defining roles and permissions for users and service accounts, ensuring only authorized entities can perform specific actions. Below are main high level options in kubernetes that defines RBAC.
+1. Service Accounts / Users
+2. Roles / Cluster Role
+3. Role Binding / CRB
