@@ -128,3 +128,9 @@ In Kubernetes, RBAC (Role-Based Access Control) is a security mechanism that con
 1. Service Accounts / Users
 2. Roles / Cluster Role
 3. Role Binding / CRB
+
+
+# Custom Resources in Kubernetes
+1. CRD (Custom Resource Definition) => Defining a new type of API to K8s 
+2. CR 
+3. Custom Controller
