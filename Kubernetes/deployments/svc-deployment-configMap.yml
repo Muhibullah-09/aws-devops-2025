@@ -24,5 +24,11 @@ spec:
             requests:
               memory: "256Mi"
               cpu: "250m"
+          env:
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: test-cm
+                  key: db-port
           ports:
             - containerPort: 8000
