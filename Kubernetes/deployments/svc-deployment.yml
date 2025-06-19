@@ -17,5 +17,18 @@ spec:
       containers:
       - name: python-app-container
         image: abhishekf5/python-sample-app-demo:v1
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+        env:
+        - name: DB_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: test-cm
+              key: db-port
         ports:
         - containerPort: 8000 
